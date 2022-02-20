@@ -1,0 +1,48 @@
+@import '../../global/styles/colors.scss';
+@import '../../global/styles/breakpoints.scss';
+
+h1, h2, h3, h4, h5 {
+    color: $primary;
+}
+h2, h3, h4, h5, body, p, button {
+    font-family: 'Roboto', sans-serif !important;
+}
+h1 {
+    font-weight: 700 !important;
+    font-family: 'Montserrat', sans-serif;
+    @media screen and (min-width: $large){
+        font-size: 68px !important;
+    }
+    @media screen and (min-width: $small) and (max-width: $large){
+        font-size: 52px;
+    }
+    @media screen and (max-width: $small) {
+        font-size: 32px;
+    }
+}
+
+h3 {
+    font-weight: 700 !important;
+    @media screen and (min-width: $large){
+        font-size: 28px !important;
+    }
+    @media screen and (min-width: $small) and (max-width: $large){
+        font-size: 24px;
+    }
+    @media screen and (max-width: $small) {
+        font-size: 20px;
+    }
+}
+
+h5 {
+    font-weight: 300 !important;
+    @media screen and (min-width: $large){
+        font-size: 16px !important;
+    }
+    @media screen and (min-width: $small) and (max-width: $large){
+        font-size: 15px;
+    }
+    @media screen and (max-width: $small) {
+        font-size: 14px;
+    }
+}

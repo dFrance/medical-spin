@@ -1,0 +1,38 @@
+@import '../../global/styles/colors.scss';
+
+.cardContainer{
+    width: 270px !important;
+    height: 100px;
+    align-items: center;
+    background: $background_light;
+    border-radius: 5px 5px 0 0;
+    border-bottom-color: $secondary;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    box-shadow: 0 10px 15px rgba(0, 120, 230, 0.1) !important;
+    display: flex;
+    transition: 0.2s;
+    cursor: pointer;
+
+    &:hover{
+        background: $secondary_light;
+    }
+
+    .cardInfo{
+        width: 100%;
+        min-width: 160px;
+    
+        .productTitle{
+            width: 56px;
+            background: $secondary;
+            font-size: 11px;
+            font-weight: 700;
+            color: $text_light;
+        }
+
+        .productName{
+            font-size: 22px;
+            font-weight: 700;
+        }
+    }
+}

@@ -1,0 +1,228 @@
+@import "../../global/styles/colors.scss";
+@import "../../global/styles/breakpoints.scss";
+
+@keyframes contentBanner {
+    25% {
+        opacity: 0;
+        margin-right: -20px;
+    }
+    100% {
+        opacity: 1;
+        margin-right: 0px;
+    }
+}
+
+.modal {
+    border-radius: 10px !important;
+
+    .header {
+        padding: 35px;
+        display: flex;
+        border-bottom: 2px solid #e5e8eb;
+
+        div {
+            display: flex;
+        }
+
+        .active {
+            padding-left: 5px;
+        }
+        .desactive {
+            color: #8a9bb4;
+        }
+        .textHeader {
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+        }
+    }
+    .alignImage {
+        display: flex;
+        justify-content: center;
+    }
+
+    .bodyContainer {
+        padding: 0 40px;
+    }
+
+    .bodyTitle {
+        font-size: 48px;
+        font-family: "Barlow", sans-serif;
+        font-weight: 500;
+    }
+
+    .bodyCode {
+        display: block;
+        margin-top: -10px;
+        font-size: 14px;
+        font-family: "Barlow", sans-serif;
+        font-weight: 400;
+    }
+
+    .alignDivider {
+        display: flex;
+    }
+    .divider {
+        margin: 39px 0;
+        width: 100%;
+        height: 0;
+        border-style: solid;
+        border-width: 0px 0px 2px 0px;
+        border-color: #e5e8eb;
+    }
+    .fillDivider {
+        width: 40%;
+        border-color: black;
+    }
+
+    .bodyDescription {
+        font-size: 16px;
+        font-family: "Barlow", sans-serif !important;
+        font-weight: 400;
+        color: #1d1e21 !important;
+    }
+
+    .footer {
+        background: #fafbfd !important;
+        padding: 0 !important;
+    }
+
+    .buttonFooter {
+        background: #3e96f6 !important;
+        margin: 20px 26px !important;
+        padding: 11px 36px !important;
+        font-size: 14px;
+        font-weight: 500 !important;
+        border-radius: 3px !important;
+        font-family: "Poppins", sans-serif !important;
+    }
+}
+
+.bannerHome {
+    transition: 1s;
+    width: 100%;
+    background: linear-gradient(#eff5f9 0%, #d4ebff 100%);
+    
+    @media screen and (min-width: $large) {
+        height: 550px;
+    }
+    @media screen and (min-width: $medium) and (max-width: $large) {
+        height: 400px;
+    }
+    @media screen and (min-width: $small) and (max-width: $medium) {
+        height: 700px;
+    }
+    @media screen and (max-width: $small) {
+        height: 640px;
+    }
+
+    div {
+        animation-duration: 1s;
+        animation-name: contentBanner;
+    }
+
+    .textBanner {
+        max-width: 450px !important;
+    }
+
+    .buttonShaped {
+        border-radius: 0px !important;
+        width: 215px;
+        height: 49px;
+        font-size: 16px;
+        color: $primary;
+        font-weight: bold;
+        color: $text_light !important;
+        box-shadow: 0 10px 15px rgba(0, 120, 230, 0.25) !important;
+    }
+}
+.imageBanner {
+    background: url("../../../public/images/doctor-home.png") no-repeat;
+    height: 100%;
+
+    @media screen and (min-width: $large) {
+        background-position: right bottom;
+        background-size: 96%;
+    }
+    @media screen and (min-width: $medium) and (max-width: $large) {
+        background-position: right bottom;
+        background-size: 96%;
+    }
+    @media screen and (min-width: $small) and (max-width: $medium) {
+        height: 440px;
+        background-size: contain;
+        background-position: center;
+    }
+    @media screen and (max-width: $small) {
+        height: 350px;
+        background-position: center;
+        background-size: contain;
+    }
+}
+.prizeWheel {
+    @media screen and (min-width: $large) {
+        margin-top: 90px;
+    }
+    @media screen and (min-width: $medium) and (max-width: $large) {
+        margin-top: 60px;
+    }
+    @media screen and (min-width: $small) and (max-width: $medium) {
+        margin-top: 90px;
+    }
+    @media screen and (max-width: $small) {
+        margin-top: 120px;
+    }
+}
+
+.heightAuto {
+    height: 100% !important;
+    margin: 0 auto !important;
+}
+.products {
+    width: 100%;
+    height: 358px;
+    background: $background_semi_light;
+
+    .pizesContainer {
+        display: flex !important;
+        width: 100% !important;
+        overflow-x: auto;
+        height: 130px;
+
+        @media screen and (min-width: $large) {
+            overflow-x: hidden;
+        }
+    }
+
+    .cardContainer {
+        display: flex;
+        gap: 30px;
+    }
+}
+.subcribe {
+    width: 100%;
+    max-width: 770px;
+    height: auto;
+    margin: 110px auto;
+
+    label {
+        font-family: "Poppins", sans-serif;
+        color: #8a9bb4;
+        font-size: 13px;
+    }
+
+    input {
+        background: #f5f9fc;
+        border-color: #d0dbe9;
+
+        &::placeholder {
+            color: #d0dbe9;
+        }
+    }
+
+    .submitButton {
+        font-family: "Poppins", sans-serif !important;
+        max-width: 134px;
+        margin: 0 auto;
+    }
+}
