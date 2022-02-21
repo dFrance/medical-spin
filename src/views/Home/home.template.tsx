@@ -135,7 +135,7 @@ export function Home() {
       <div className={styles.bannerHome}>
         <Container className={styles.heightAuto}>
           <Row className={`align-items-center ${styles.heightAuto}`}>
-            <Col md={12} lg={5} className={styles.textBanner}>
+            <Col md={12} lg={5} className={`text-align-start ${styles.textBanner}`}>
               <h1>Spin to Win</h1>
               <h3>Spin the wheel to win prizes</h3>
               <h5 className="mt-4 mb-3">Here tou can add a few sentences explaning what prizes can be won and any other information you want people to know</h5>
@@ -171,12 +171,12 @@ export function Home() {
       <Container fluid>
         <div className={styles.subcribe}>
           <Row>
-            <h3 className="text-center mb-4">Subscribe to receive our latest posts.</h3>
+            <h3 className="text-center mb-3">Subscribe to receive our latest posts.</h3>
           </Row>
           {!subscribe.submitted ?
             <Form onSubmit={handleSubmitSubscribe}>
               <Row>
-                <Col>
+                <Col xs={12} md={6} className="mt-3">
                   <Form.Label>Name</Form.Label>
                   <Form.Control
                     value={subscribe.name}
@@ -186,7 +186,7 @@ export function Home() {
                     placeholder="Type your name"
                     onChange={(e) => setSubscribe({ ...subscribe, name: e.target.value })} />
                 </Col>
-                <Col>
+                <Col xs={12} md={6} className="mt-3">
                   <Form.Label>Email</Form.Label>
                   <Form.Control
                     value={subscribe.email}
@@ -198,15 +198,17 @@ export function Home() {
                     onChange={(e) => setSubscribe({ ...subscribe, email: e.target.value })}
                   />
                 </Col>
-                <Row className="mt-4 align-items-center">
-                  <Button
-                    type="submit"
-                    variant="primary"
-                    className={styles.submitButton}
-                  >
-                    <img src="/images/mail.png" width="16" alt="Mail icon" className="me-2" />
-                    Subscribe
-                  </Button>
+                <Row className="mt-4 justify-content-md-center">
+                  <Col xs="auto">
+                    <Button
+                      type="submit"
+                      variant="primary"
+                      className={styles.submitButton}
+                    >
+                      <img src="/images/mail.png" width="16" alt="Mail icon" className="me-2" />
+                      Subscribe
+                    </Button>
+                  </Col>
                 </Row>
               </Row>
             </Form>
