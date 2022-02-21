@@ -105,14 +105,16 @@ export function Home() {
       code: 44658,
       productName: 'Iphone 13 Pro',
       description: 'Quisque congue auctor fermentum. Proin lectus ligula, accumsan eget varius quis, facilisis a tortor. Integer luctus varius risus, nec condimentum erat sagittis id. Nunc at lacus magna. Ut volutpat velit interdum laoreet ultrices.'
-    }, {
+    }, 
+    {
       thumbnail: '/images/thumb_apple-watch.png',
       image: '/images/apple-watch.png',
       productTitle: 'PRIZE 03',
       code: 44658,
       productName: 'Apple Watch 6',
       description: 'Phasellus ante velit, hendrerit sed ullamcorper vel, lobortis eu lorem. Etiam aliquam leo vel purus semper, a tempor magna aliquet. Vestibulum et imperdiet libero. Integer lacinia lobortis tortor. Nulla ac interdum ipsum. Nulla eget finibus arcu.'
-    }, {
+    }, 
+    {
       thumbnail: '/images/thumb_apple-tag.png',
       image: '/images/apple-tag.png',
       productTitle: 'PRIZE 04',
